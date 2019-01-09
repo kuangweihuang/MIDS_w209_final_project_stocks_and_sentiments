@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>STOCKS & Sentiment - W209 Fall 2018 Final Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<!--     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+ -->
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><b>STOCKS</b> & <i>Sentiments</i></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#start">Getting Started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#users-data-tasks">Users, Data & Tasks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#price-news">Prices & News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sentiment-influence">Sentiment Influence</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#final-viz">Final Viz</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Masthead header-->
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1>
+              <strong><b>STOCKS</b> & <i>Sentiments</i></strong>
+            </h1>
+            <p><br /><p>
+            <hr class="light">
+            <p><br /><p>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-4">Are you ready for sentiment resilient, high performance investing?</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Getting Started section -->
+    <section class="bg-primary" id="start">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto text-center">
+            <h2 class="section-heading text-white">Getting Started</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">The ubiquity of data today enables investors to make better investment decisions. However, sometimes financial data is not easily accessible to all investors, and advanced investing analytics tools can be very expensive. <br /><b>STOCKS</b> & <i>Sentiments</i> is a tool that provides insights from stock market time-series data of US-based public companies and how they correlate with the news that surround them every day.  </p>
+            <p class="text-faded mb-4">Whether you are an experienced investor or you are venturing in this field for the first time, we hope that <b>STOCKS</b> & <i>Sentiments</i> can help guide your investment decisions in the stock market by leveraging news sentiment information.</p>
+            <p class="text-faded mb-4">Keep scrolling to get started, or you can choose to skip to the final dashboard view if you've been here before...<br /><br /></p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#final-viz">Skip to Final Viz</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Users, Data, Tasks section -->
+    <section id="users-data-tasks">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Defining the Users, Data & Tasks</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-user text-primary mb-3 sr-icon-1"></i>
+              <h3 class="mb-3">Users</h3>
+              <p class="text-muted mb-0">This site is built for both seasoned and new equity investors. Are you an investor interested in understanding how different stocks perform and how their performance correlates with news sentiment? You are in the right place!</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-database text-primary mb-3 sr-icon-3"></i>
+              <h3 class="mb-3">Data</h3>
+              <p class="text-muted mb-0">We will be using two sets of data from a current <a href="https://www.kaggle.com/c/two-sigma-financial-news">Kaggle competition</a> hosted by <a href="https://www.twosigma.com/">Two Sigma</a>. The first is financial stock market data with daily time series of prices and returns from 2007 to 2016 provided by Intrinion, and the second is news and sentiment data provided by Thomson Reuters for the same time period.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3 class="mb-3"><br /><br /></h3>
+            <i class="fas fa-4x fa-tasks text-primary mb-3 sr-icon-4"></i>
+            <h3>Tasks</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-2 mx-auto">
+              <h3 class="mb-3"># 1</h3>
+              <p class="text-muted mb-0">Exploring stock market performance and news volume & sentiment of different companies over time by visualizing time-series data.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-2 mx-auto">
+              <h3 class="mb-3"># 2</h3>
+              <p class="text-muted mb-0">Gaining insights into which companies are the most susceptible to price fluctuations due to news sentiment, and which are not.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-2 mx-auto">
+              <h3 class="mb-3"># 3</h3>
+              <p class="text-muted mb-0">Using our knowledge and visualization tools to build a sentiment resilient and high performance portfolio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Price & News section -->
+    <section class="bg-dark text-white" id="price-news">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-12 mx-auto text-center">
+          <h2 class="section-heading text-white">First let's try to chart a company's stock price and news sentiment</h2>
+          <hr class="light my-4">
+          <p class="text-faded mb-4">Using the drop-down menu below, select any company that you would like to explore. Next, move the slider bar to indicate the time frame that interests you. You can now see the stock price movement and the number of news articles that have been published about this company. <br /><br /> Based on the content of the news, we classify the sentiment: is it <b><span style="color: #FD6A02">negative</span></b> or <b><span style="color: #146EB4">positive</span></b> news? To assist with this, we created a <b><i>"Sentiment Rating"</i></b> metric which transforms the sentiment analysis probability of whether a news article is postive, neutral or negative into a single averaged daily rating between -1 for <b><span style="color: #FD6A02">negative</span></b> and 1 for <b><span style="color: #146EB4">positive</span></b>.</p>
+          <hr class="light my-4">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tableau Chart - CompanyStockPriceNewsVolumeandSentimentRating -->
+    <center>
+      <div class='tableauPlaceholder' id='viz1544747526744' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompanyStockPriceNewsVolumeandSentimentRatingperf&#47;task1Dashbd&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CompanyStockPriceNewsVolumeandSentimentRatingperf&#47;task1Dashbd' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompanyStockPriceNewsVolumeandSentimentRatingperf&#47;task1Dashbd&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544747526744');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </center>
+
+    <!-- Sentiment & Influence section part1-->
+    <section class="bg-primary" id="sentiment-influence">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-12 mx-auto text-white text-center">
+          <h2 class="section-heading">Which companies are most influenced by sentiment?</h2>
+          <hr class="light my-4">
+          <p class="text-faded mb-4">We created a metric "<b><i>Sentiment Influence</i></b>" to measure the ratio of a company's stock price return over the <i>Sentiment Rating</i>. Now we can rank the companies across the entire time period by <i>Sentiment Influence</i>.<br /><br /> The below view shows a ranking of companies that are highly influenced by sentiment (i.e. <i>Sentiment Influence</i> > 1) from the most to the least influenced. <br /><br /> Companies that have high sentiment influence and low returns, may signal highly speculative companies which have large swings in daily trading which correlates to news sentiment, and yet, over the entire period, do not have high returns. </p>
+          <hr class="light my-4">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tableau Chart - CompaniesMostInfluencedbySentiment -->
+    <center>
+      <div class='tableauPlaceholder' id='viz1544747557128' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompaniesMostInfluencedbySentimentperf&#47;task2DashA&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CompaniesMostInfluencedbySentimentperf&#47;task2DashA' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompaniesMostInfluencedbySentimentperf&#47;task2DashA&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544747557128');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </center>
+
+    <!-- Sentiment & Influence section part2-->
+    <section class="bg-dark">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-12 mx-auto text-white text-center">
+          <h2 class="section-heading">How about companies which are not influenced by news sentiment?</h2>
+          <hr class="light my-4">
+          <p class="text-faded mb-4">We now take a closer look into companies that have <i>Sentiment Influence</i> < 1 and rank them from highest to lowest performance measured by their total returns over the entire time period.<br /><br />These companies could deserve a place in a sentiment resilient portfolio.</p>
+          <hr class="light my-4">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tableau Chart - CompanieswithHighReturnsandLowSentimentInfluence -->
+    <center>
+      <div class='tableauPlaceholder' id='viz1544747578221' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompanieswithHighReturnsandLowSentimentInfluenceperf&#47;task2DashB&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CompanieswithHighReturnsandLowSentimentInfluenceperf&#47;task2DashB' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CompanieswithHighReturnsandLowSentimentInfluenceperf&#47;task2DashB&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544747578221');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </center>
+
+    <!-- Portfolio section -->
+    <section class="bg-primary" id="portfolio">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-12 mx-auto text-white text-center">
+          <h2 class="section-heading">Now, how can we use what we learned on a portfolio level?</h2>
+          <hr class="light my-4">
+          <p class="text-faded mb-4">We are now moving to porfolio building and it would be helpful to map out the investment returns against the <i>Sentiment Ratings</i> for a group of companies.<br /><br />Pick out your portfolio, your current one or your dream one. Let us see how the companies that you have chosen will match up with one another, and also evaluate the average <i>Sentiment Influence</i> of the entire portfolio.</p>
+          <hr class="light my-4">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tableau Chart - SelectingaPortfolioofCompaniesbasedonReturnsandSentiment -->
+    <center>
+      <div class='tableauPlaceholder' id='viz1544747676150' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;SelectingaPortfolioofCompaniesbasedonReturnsandSentimentperf&#47;task3Dashbd&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SelectingaPortfolioofCompaniesbasedonReturnsandSentimentperf&#47;task3Dashbd' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;SelectingaPortfolioofCompaniesbasedonReturnsandSentimentperf&#47;task3Dashbd&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544747676150');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='927px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </center>
+
+    <!-- Final Viz section (although the nav-links go directly to the viz below)-->
+    <section class="bg-dark">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-12 mx-auto text-white text-center">
+          <h2 class="section-heading">Final Viz</h2>
+          <hr class="light my-4">
+          <p class="text-faded mb-4">Putting it all into a complete dashboard tool for portfolio building, and let the discovery continue...</p>
+          <hr class="light my-4">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tableau Chart - StocksandSentimentsFinalViz -->
+    <center id="final-viz">
+      <div class='tableauPlaceholder' id='viz1544744903705' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StocksandSentimentsFinalVizperf&#47;finalVizDash&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='StocksandSentimentsFinalVizperf&#47;finalVizDash' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StocksandSentimentsFinalVizperf&#47;finalVizDash&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1544744903705');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1500px';vizElement.style.height='977px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </center>
+
+    <!-- Viz-End section -->
+    <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Happy Investing!</h2>
+      </div>
+    </section>
+    
+
+    <!-- Team section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto text-center">
+            <h2 class="section-heading">Feel free to reach out to Our Team!</h2>
+            <i class="fas fa-envelope text-primary fa-3x mb-3 sr-contact-2"></i>
+            <p><br /></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 ml-auto text-center">  
+          </div>
+          <div class="col-lg-9 mr-auto text-left">
+            <h5>Kuangwei Huang</h5>
+            <p>Graduate Student, UC Berkeley Master of Information & Data Science<br>Assistant General Manager (Engineering) @ Keppel FELS Ltd <br />
+              <a href="mailto:kuangwei@berkeley.edu">kuangwei@berkeley.edu</a><br />
+              <a href="http://www.linkedin.com/in/kuangwei-huang">LinkedIn</a><br /><br />
+            </p>
+
+            <h5>Ava Rezvani</h5>
+            <p>Graduate Student, UC Berkeley Master of Information & Data Science<br>Human Factors Engineer @ Apple <br />
+              <a href="mailto:ava.rezvani@berkeley.edu">ava.rezvani@berkeley.edu</a><br />
+              <a href="http://www.linkedin.com/in/avarezvani">LinkedIn</a><br /><br />
+            </p>
+
+            <h5>Christina Papadimitriou</h5>
+            <p>Graduate Student, UC Berkeley Master of Information & Data Science<br>Software Engineer @ JPMorgan Asset Management<br />
+              <a href="mailto:c.papadimitriou@berkeley.edu">c.papadimitriou@berkeley.edu</a><br />
+              <a href="http://www.linkedin.com/in/cpapadimitriou1">LinkedIn</a><br /><br />
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-warning">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; UC Berkeley School of Information 2018</p>
+        <p class="m-0 text-center text-white">This website was generated as a result of a classroom final project assignment, without intention for external use or profit.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
+</html>
