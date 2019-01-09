@@ -1,4 +1,4 @@
-# Stocks & Sentiments
+# MIDS W209 Stocks & Sentiments
 
 This is the Repo for the Final Project in UC Berkeley's MIDS W209 Data Visualization Course, instructed by John Alexis Guerra Gomez. 
 
@@ -9,7 +9,10 @@ Stocks & Sentiments is a tool that provides insights from stock market time-seri
 *Christina Papadimitriou, Kuangwei Huang & Ava Rezvani*
 
 ### Project Webpage:
-http://people.ischool.berkeley.edu/~c.papadimitriou/stocksAndSentiment/
+http://people.ischool.berkeley.edu/~kuangwei/W209-Stocks-and-Sentiments/
+
+### Youtube Demo:
+https://www.youtube.com/watch?v=IQltp2Henk4
 
 ### Data Source:
 In this project we used the dataset from the `Two Sigma: Using News to Predict Stock Movements` competition: 
