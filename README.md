@@ -9,10 +9,12 @@ Stocks & Sentiments is a tool that provides insights from stock market time-seri
 *Christina Papadimitriou, Kuangwei Huang & Ava Rezvani*
 
 ### Project Webpage:
+http://people.ischool.berkeley.edu/~c.papadimitriou/stocksAndSentiment/
+or
 http://people.ischool.berkeley.edu/~kuangwei/W209-Stocks-and-Sentiments/
 
 ### Youtube Demo:
-https://www.youtube.com/watch?v=IQltp2Henk4
+https://www.youtube.com/watch?v=IQltp2Henk4 (currently removed)
 
 ### Data Source:
 In this project we used the dataset from the `Two Sigma: Using News to Predict Stock Movements` competition: 
